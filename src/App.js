@@ -7,10 +7,16 @@ import BestPokemon from "./BestPokemon";
 const abilities = ["Anticipation", "Adaptability", "Run-Away"];
 let date = new Date().toLocaleDateString();
 
+
+
 function App() {
+
+  function logWhenClicked() {
+    console.log("heey");
+  }
   return (
     <>
-      <Logo appName="Pokedex" />
+      <Logo appName="Shayan" handleClick={logWhenClicked} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
     </>
