@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import CaughtPokemon from "./CoughtPokemon";
 import BestPokemon from "./BestPokemon";
 import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 const abilities = ["Anticipation", "Adaptability", "Run-Away"];
 let date = new Date().toLocaleDateString();
@@ -21,6 +22,7 @@ function App() {
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
       <PokemonMovesSelector />
+      <PokemonCity />
     </>
   );
 }
